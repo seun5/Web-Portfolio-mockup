@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Set View Port -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Set charset to UTF-8 -->
+	<meta charset="utf-8">	
 	<title>Sanghyun Brian Eun </title>
+	<!-- Link Bootstrap framework(CSS, JS, JQUERY) -->
+	<!-- Link to main.css  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Tested a favicon -->
+  	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'>
+
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<!-- Nav Bar Design -->
+	<nav class="navbar navbar-inverse navbar-fixed-top header-design">
 	  <div class="container-fluid">
-			<div class="navbar-header">
-				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-				<a href="#" class="navbar-brand">Sanghyun Brian Eun</a>
-			</div>
-		<ul class="collapse navbar-collapse" id="bs-nav-demo">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Data Analytics</a></li>
-				<li><a href="#">Web Development</a></li>
-				<li><a href="#">Academics</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-		</ul>
+		<div class="navbar-header">
+			<img class="navbar-brand" src="img/udacity.svg" alt = "Alternate img">
+			<a href="#" class="navbar-brand">Sanghyun Brian Eun </a>	
+		</div>
 	  </div>
 	</nav>
-	<div class = "container seoul">
-		<p>I am ground</p>
-	</div>
-	<div class = "container">
-		<h2>Featured Work</h2>
-		<div class = "row">
-			<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
-				<div class = "row image"><img class ="img-responsive" src="img/frontend.jpg"></div>
-				<div class = "row caption">Weather Forecast</div>
-			</div>
-			<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
-				<div class = "row image"><img class ="img-responsive" src="img/frontend.jpg"></div>
-				<div class = "row caption">Front-End Design</div>
-			</div>				
-			<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
-				<div class = "row image"><img class ="img-responsive" src="img/frontend.jpg"></div>
-				<div class = "row caption">Back-End Development</div>
-			</div>
-			<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
-				<div class = "row image"><img class ="img-responsive" src="img/frontend.jpg"></div>
-				<div class = "row caption">Data Analysis</div>
-			</div>
+	<!-- Main Content  -->
+	<main>
+		<!-- Include a main picture -->
+		<div class = "container seoul">
+			<img class = "img-responsive" src="img/seoul.jpg" alt= "Alternate image">
 		</div>
- 	</div>
 
+		<!-- Include featured work -->
+		<div class = "container featured-work">
+			<h2>Featured Work</h2>
+			<div class = "row">
+				<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
+					<div class = "thumbnail"><img class ="featured" src="img/weather.jpg" alt = "Alternate Image"></div>
+					<h3 class = "row caption">Weather Forecast</h3>
+					<p class ="caption-link"> <a href="#">Link</a></p>
+				</div>
+				<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
+					<div class = "thumbnail"><img class ="featured" src="img/frontend.jpg" alt = "Alternate Image"></div>
+					<h3 class = "row caption">Front-End Design</h3>
+					<p class ="caption-link"> <a href="#">Link</a></p>
+				</div>				
+				<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
+					<div class = "thumbnail"><img class ="featured" src="img/backend.png" alt = "Alternate Image"></div>
+					<h3 class = "row caption">Back-End Development</h3>
+					<p class ="caption-link"> <a href="#">Link</a></p>
+				</div>
+				<div class ="col-lg-3 col-sm-6 col-xs-12 image"> 
+					<div class = "thumbnail"><img class ="featured" src="img/data_analysis.png" alt = "Alternate Image"></div>
+					<h3 class = "row caption">Data Analysis</h3>
+					<p class ="caption-link"> <a href="#">Link</a></p>
+				</div>
+			</div>
+	 	</div>
+	</main>
 </body>
 </html>
